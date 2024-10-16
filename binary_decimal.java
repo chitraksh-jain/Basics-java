@@ -3,7 +3,7 @@ public class binary_decimal {
         double decimal=0;
         long last_digit=0;
         int power=0;
-       for(int i=1;i<=5;i++){
+       while(n>0){
             last_digit=n%10;
              decimal=decimal+(last_digit * Math.pow(2,power));
              n=n/10;
@@ -12,6 +12,6 @@ public class binary_decimal {
         System.out.println(decimal);
     }
     public static void main(String[] args) {
-        binary_to_decimal(10010);
+        binary_to_decimal(1001001);
     }
 }
